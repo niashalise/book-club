@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+nav {
+    position: absolute;
+    margin: 20px;
+}
+
+button {
+    margin: 0 10px;
+    background-color: #744DA9;
+    border-radius: 0;
+    padding: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: #DFBA48;
+    color: #744DA9
+}
+
+h1 {
+  font-family: "Abril Fatface", serif;
+  color: #744DA9;
+  border-bottom: #DFBA48 7px solid;
+}

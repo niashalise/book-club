@@ -1,0 +1,20 @@
+.modal-container {
+  background-color: #e6c541;
+  height: 150;
+  width: 240;
+  margin: auto;
+  padding: 2%;
+  border: 2px solid #744da9;
+  border-radius: 10px;
+  box-shadow: 2px solid black;
+}
+
+.modal-content {
+  padding: 10px;
+}
+
+button {
+  background-color: #744da9;
+  font-weight: bold;
+  border: 2px solid #dfba48;
+}
