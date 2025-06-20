@@ -1,0 +1,27 @@
+.results {
+    margin: 20px auto;
+    background-color: #e6c541;
+    height: 800px;
+    width: 1000px;
+    border-radius: 10px;
+    display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.container {
+    background-color: rgba(114, 95, 241, 0.7);
+  border-radius: 10px;
+  height: 300px;
+  width: 200px;
+  margin: 20px;
+  position: relative; 
+  overflow: hidden;
+}
+.container button {
+  font-weight: bold;
+  border: 2px solid #e6c541;
+  display: block;
+  margin: 70px auto;
+}
+
