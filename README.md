@@ -9,7 +9,10 @@ Project Status
 This project is currently in development. Users can see their books once logged in, and find friends. They can share books with friends. 
 
 Installation and Setup Instructions
-This application uses React.js
+This application uses React.js. Run server using npm run dev.
+
+Dependencies
+Dependencies include react-dom, react-router, and react-router-dom. Install using npm install (dependency-name).
 
 Reflection
 This project was created for my final project with Code the Dream. 
