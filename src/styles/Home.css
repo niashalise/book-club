@@ -18,10 +18,8 @@
   position: relative; 
   overflow: hidden;
 }
-.container button {
-  font-weight: bold;
-  border: 2px solid #e6c541;
-  display: block;
-  margin: 70px auto;
-}
 
+.add {
+  display: flex;
+  justify-content: end;
+}

@@ -9,19 +9,7 @@ import NotFound from './pages/NotFound'
 
 function App() {
   const [title, setTitle] = useState('Book Club')
-  const [user, setUser] = useState(null);
-  const handleLogin = () => {
-    setUser({ email: "", password: "" })
-    localStorage.setItem("user", JSON.stringify(user));
-  };
-  const handleLogout = () => setUser(null);
-  useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
-  }, []);
+  const [myBooks, setMyBooks] = useState([]);
 
   const location = useLocation();
 
@@ -33,13 +21,12 @@ function App() {
     }
   })
 
-  const isAuthenticated = user !== null;
   return (
     <div>
       <Header title={title} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/mybooks" element={<MyBooks />} />
+        <Route path="/" element={<Home myBooks={myBooks} setMyBooks={setMyBooks} />} />
+        <Route path="/mybooks" element={<MyBooks myBooks={myBooks} />} />
         <Route path="/\/*" element={<NotFound />}></Route>
       </Routes>
     </div>

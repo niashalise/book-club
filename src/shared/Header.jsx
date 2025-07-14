@@ -17,7 +17,16 @@ function Header ({ title}) {
               Home
             </button>
           )}
-              <button type="button">My Books</button>
+          {location.pathname !== "/mybooks" && (
+            <button
+              type="button"
+              onClick={() => {
+                navigate("/mybooks");
+              }}
+            >
+              My Books
+            </button>
+          )}
         </nav>
       </div>
     );
