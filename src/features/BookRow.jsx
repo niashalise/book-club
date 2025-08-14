@@ -16,8 +16,8 @@ const deleteBook = (e) => {
     return (
       <tr key={book.key}>
         <td>{book.title}</td>
-        <td>{book.author}</td>
-        <td>{book.year}</td>
+        <td>{book.author_name}</td>
+        <td>{book.first_publish_year}</td>
         <td>
           <button type="button" onClick={deleteBook}>Delete</button>
         </td>

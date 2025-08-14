@@ -2,7 +2,7 @@
     margin: 20px auto;
     background-color: #e6c541;
     height: 800px;
-    width: 1000px;
+    width: 1300px;
     border-radius: 10px;
     display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
@@ -17,6 +17,7 @@
   margin: 20px;
   position: relative; 
   overflow: hidden;
+  padding: 15px;
 }
 
 .add {
