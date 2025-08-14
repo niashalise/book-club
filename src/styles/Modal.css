@@ -2,19 +2,30 @@
   background-color: #e6c541;
   height: 150;
   width: 240;
-  margin: auto;
   padding: 2%;
   border: 2px solid #744da9;
   border-radius: 10px;
   box-shadow: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 30%;
 }
 
 .modal-content {
   padding: 10px;
+  font-family: "Abril Fatface", serif;
+  border-bottom: #F3E3B1 3px solid;
+  border-top: #F3E3B1 3px solid;
 }
 
 button {
   background-color: #744da9;
   font-weight: bold;
-  border: 2px solid #dfba48;
+  border: 2px solid #F3E3B1;
+
+  &:hover {
+    background-color: #F3E3B1;
+    color: #744da9;
+    border: 2px solid #744da9;
+  }
 }
